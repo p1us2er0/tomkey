@@ -23,10 +23,10 @@
 
 &trackball_listener {
     status = "okay";
-    input-processors = <&zip_temp_layer 1 400>;
+    input-processors = <&zip_temp_layer 6 700>;
 
     scroll {
-        layers = <2>;
+        layers = <7>;
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
     };
 };
