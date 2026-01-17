@@ -34,11 +34,6 @@
         layers = <8>;
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
     };
-
-    scroll_win {
-        layers = <9>;
-        input-processors = <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
-    };
 };
 
 
