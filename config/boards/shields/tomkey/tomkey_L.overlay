@@ -23,7 +23,7 @@
 
 &trackball_listener {
     status = "okay";
-    input-processors = <&zip_temp_layer 6 800>, <&zip_xy_scaler 2 1>;
+    input-processors = <&zip_temp_layer 6 800>, <&zip_xy_scaler 3 2>;
 
     mouse_slow {
         layers = <7>;
@@ -36,7 +36,7 @@
     };
 
     scroll_win {
-        layers = <8>;
+        layers = <9>;
         input-processors = <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
     };
 };
