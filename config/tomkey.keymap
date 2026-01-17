@@ -50,9 +50,7 @@
     tapping-term-ms = <500>;
 };
 
-&zip_temp_layer {
-    require-prior-idle-ms = <200>;
-};
+&zip_temp_layer { require-prior-idle-ms = <200>; };
 
 &mkp_input_listener { input-processors = <&zip_temp_layer 6 500>; };
 
@@ -364,10 +362,10 @@
 
         MOUSE {
             bindings = <
-&kp HOME        &kp LG(UP_ARROW)    &kp UP_ARROW         &kp LC(LS(TAB))     &kp LC(TAB)                                 &trans     &trans  &trans  &trans  &trans
-&kp END         &kp LEFT_ARROW      &kp DOWN_ARROW       &kp RIGHT_ARROW     &trans               &trans      &trans     &trans     &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &kp LS(LEFT_ARROW)  &kp LS(RIGHT_ARROW)  &trans      &trans     &trans     &trans  &trans  &trans  &trans
-&trans          &trans              &trans               &trans              &mo 7                &trans      &mkp RCLK  &mkp LCLK                          &trans
+&kp HOME        &kp LG(UP_ARROW)  &kp UP_ARROW    &trans           &trans                         &trans     &kp LS(LC(TAB))     &kp LC(TAB)          &trans  &trans
+&kp END         &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &trans     &trans     &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &trans
+&kp LEFT_SHIFT  &trans            &trans          &trans           &trans  &trans      &trans     &trans     &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &trans  &trans
+&trans          &trans            &trans          &trans           &mo 7   &trans      &mkp RCLK  &mkp LCLK                                                   &trans
             >;
         };
 
