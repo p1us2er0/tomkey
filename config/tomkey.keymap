@@ -338,7 +338,7 @@
 &trans            &trans  &trans        &trans       &trans                                                    &trans  &trans  &trans                          &trans                         &trans
 &trans            &trans  &trans        &trans       &trans  &trans                &single_quote_jis           &trans  &trans  &trans                          &trans                         &trans
 &trans            &trans  &trans        &trans       &trans  &lt_semi_jis 5 0      &mt_minus_jis LEFT_SHIFT 0  &trans  &trans  &td_comma_left_parenthesis_jis  &td_dot_right_parenthesis_jis  &trans
-&kp LEFT_CONTROL  &trans  &kp LEFT_WIN  &lt 4 LANG2  &trans  &lt 9 LANG1           &trans                      &trans                                                                         &trans
+&kp LEFT_CONTROL  &trans  &kp LEFT_WIN  &lt 4 LANG2  &trans  &lt 6 LANG1           &trans                      &trans                                                                         &trans
             >;
         };
 
