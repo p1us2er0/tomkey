@@ -363,7 +363,7 @@
         MOUSE {
             bindings = <
 &kp HOME        &kp LG(UP_ARROW)  &kp UP_ARROW    &trans           &trans                         &trans     &kp LS(LC(TAB))     &kp LC(TAB)          &trans  &trans
-&kp END         &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &trans     &trans     &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &trans
+&kp END         &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &trans     &trans     &mkp LCLK           &mkp RCLK            &trans  &trans
 &kp LEFT_SHIFT  &trans            &trans          &trans           &trans  &trans      &trans     &trans     &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &trans  &trans
 &trans          &trans            &trans          &trans           &mo 7   &trans      &mkp RCLK  &mkp LCLK                                                   &trans
             >;
@@ -371,19 +371,19 @@
 
         MOUSE_SLOW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &mkp RCLK  &mkp LCLK                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans     &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &mkp RCLK  &mkp LCLK                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
