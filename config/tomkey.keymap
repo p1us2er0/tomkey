@@ -353,10 +353,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &bootloader                                           &bt_mac 0  &bt_mac 1  &bt_mac 2  &bt_win 3  &bt_win_jis 4
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5         &trans                    &sys_reset   &kp F6     &kp F7     &kp F8     &kp F9     &kp F10
-&trans  &trans  &trans  &trans  &kp LG(LS(S))  &trans                    &bootloader  &trans     &trans     &mac_us    &win_us    &win_jis
-&trans  &trans  &trans  &trans  &trans         &kp LG(LS(NUMBER_4))      &trans       &trans                                      &bt BT_CLR
+&trans  &trans  &trans  &reset  &bootloader                                      &bt_mac 0  &bt_mac 1  &bt_mac 2  &bt_win 3  &bt_win_jis 4
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5         &trans                    &trans  &kp F6     &kp F7     &kp F8     &kp F9     &kp F10
+&trans  &trans  &trans  &trans  &kp LG(LS(S))  &trans                    &trans  &trans     &trans     &mac_us    &win_us    &win_jis
+&trans  &trans  &trans  &trans  &trans         &kp LG(LS(NUMBER_4))      &trans  &trans                                      &bt BT_CLR
             >;
         };
 
