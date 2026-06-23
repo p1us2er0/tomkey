@@ -353,7 +353,7 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                &bt_mac 0  &bt_mac 1  &bt_mac 2  &bt_win 3  &bt_win_jis 4
+&trans  &trans  &trans  &trans  &bootloader                                           &bt_mac 0  &bt_mac 1  &bt_mac 2  &bt_win 3  &bt_win_jis 4
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5         &trans                    &sys_reset   &kp F6     &kp F7     &kp F8     &kp F9     &kp F10
 &trans  &trans  &trans  &trans  &kp LG(LS(S))  &trans                    &bootloader  &trans     &trans     &mac_us    &win_us    &win_jis
 &trans  &trans  &trans  &trans  &trans         &kp LG(LS(NUMBER_4))      &trans       &trans                                      &bt BT_CLR
@@ -364,7 +364,7 @@
             bindings = <
 &kp HOME        &kp LG(UP_ARROW)  &kp UP_ARROW        &trans               &trans                         &trans     &kp LS(LC(TAB))  &kp LC(TAB)  &trans  &trans
 &kp END         &kp LEFT_ARROW    &kp DOWN_ARROW      &kp RIGHT_ARROW      &trans  &trans      &trans     &trans     &mkp LCLK        &mkp RCLK    &trans  &trans
-&kp LEFT_SHIFT  &trans            &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &trans  &trans      &trans     &trans     &trans           &trans       &trans  &trans
+&kp LEFT_SHIFT  &none             &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &trans  &trans      &trans     &trans     &trans           &trans       &trans  &trans
 &trans          &trans            &trans              &trans               &mo 7   &trans      &mkp RCLK  &mkp LCLK                                        &trans
             >;
         };
