@@ -1,21 +1,26 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: cormoran
+      url-base: https://github.com/cormoran
     - name: badjeff
       url-base: https://github.com/badjeff
     - name: pukuhei
       url-base: https://github.com/pukuhei
   projects:
+    # zmk-tom-oled for ZMK v0.4 (Zephyr 4.1) uses the split relay event and
+    # custom Studio RPC APIs, which exist only in cormoran's ZMK fork. Use the
+    # same fork as the OLED author, pinned to a tested commit of main+dya.
+    # Keep this revision in sync with .github/workflows/build.yml.
     - name: zmk
-      remote: zmkfirmware
-      revision: v0.3
+      remote: cormoran
+      revision: e5c9b6915b56801193e359dd9bad4a167ce0d1b8
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: badjeff
-      revision: zmk-0.3
+      revision: zmk-0.4
+    # Pinned so that upstream OLED changes cannot break the build unnoticed.
     - name: zmk-tom-oled
       remote: pukuhei
-      revision: main
+      revision: b1db06b55bea5bf340760d3a5a7c0b709aa3caa6
   self:
     path: config

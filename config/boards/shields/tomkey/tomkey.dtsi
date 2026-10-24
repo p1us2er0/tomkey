@@ -163,3 +163,8 @@
 };
 
 &xiao_serial { status = "disabled"; };
+
+/* P0.09 and P0.10 are used as GPIOs for the matrix and the trackball CS. */
+&uicr {
+    nfct-pins-as-gpios;
+};

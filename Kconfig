@@ -1,0 +1,6 @@
+menu "Tomkey extensions"
+config TOMKEY_LAYER_STATE
+    bool "Read-only BLE layer state"
+    depends on ZMK_BLE && ZMK_SPLIT_ROLE_CENTRAL
+    default n
+endmenu
