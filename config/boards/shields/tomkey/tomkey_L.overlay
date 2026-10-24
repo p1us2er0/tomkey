@@ -21,18 +21,23 @@
     };
 };
 
+/*
+ * Scales are tuned for the sensor's cpi of 1600 in tomkey_R.overlay.
+ * Older driver builds failed to apply that cpi, so these were halved
+ * after the fixed driver made the trackball faster.
+ */
 &trackball_listener {
     status = "okay";
-    input-processors = <&zip_temp_layer 6 800>, <&zip_xy_scaler 3 2>;
+    input-processors = <&zip_temp_layer 6 800>, <&zip_xy_scaler 3 4>;
 
     mouse_slow {
         layers = <7>;
-        input-processors = <&zip_xy_scaler 1 2>;
+        input-processors = <&zip_xy_scaler 1 4>;
     };
 
     scroll {
         layers = <8>;
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 32>, <&zip_xy_to_scroll_mapper>;
     };
 };
 
