@@ -23,13 +23,14 @@
 
 /*
  * Scales are tuned for the sensor's cpi of 1600 in tomkey_R.overlay.
- * Older driver builds failed to apply that cpi, so these were cut to a
- * quarter after the fixed driver made the trackball faster.
+ * Older driver builds failed to apply that cpi, so these were lowered
+ * after the fixed driver made the trackball faster.
+ * Effective counts per inch: normal 400, slow 200, scroll 25.
  * The 800 in zip_temp_layer is the mouse layer timeout in ms, not speed.
  */
 &trackball_listener {
     status = "okay";
-    input-processors = <&zip_temp_layer 6 800>, <&zip_xy_scaler 3 8>;
+    input-processors = <&zip_temp_layer 6 800>, <&zip_xy_scaler 1 4>;
 
     mouse_slow {
         layers = <7>;
