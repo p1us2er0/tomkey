@@ -22,6 +22,15 @@
 };
 
 /*
+ * Do not enter the auto mouse layer within 300 ms of a key press, so that
+ * bumping the trackball while typing does not switch layers. The cursor
+ * still moves, and an already active mouse layer is not affected.
+ */
+&zip_temp_layer {
+    require-prior-idle-ms = <300>;
+};
+
+/*
  * Scales are tuned for the sensor's cpi of 1600 in tomkey_R.overlay.
  * Older driver builds failed to apply that cpi, so these were lowered
  * after the fixed driver made the trackball faster.
