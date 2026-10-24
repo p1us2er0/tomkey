@@ -353,37 +353,37 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &sys_reset  &bootloader                                      &bt_mac 0  &bt_mac 1  &bt_mac 2  &bt_win 3  &bt_win_jis 4
-&kp F1  &kp F2  &kp F3  &kp F4      &kp F5         &trans                    &trans  &kp F6     &kp F7     &kp F8     &kp F9     &kp F10
-&trans  &trans  &trans  &trans      &kp LG(LS(S))  &trans                    &trans  &trans     &trans     &mac_us    &win_us    &win_jis
-&trans  &trans  &trans  &trans      &trans         &kp LG(LS(NUMBER_4))      &trans  &trans                                      &bt BT_CLR
+&trans   &trans   &trans  &sys_reset  &bootloader                                      &bt_mac 0  &bt_mac 1  &bt_mac 2  &bt_win 3  &bt_win_jis 4
+&kp F1   &kp F2   &kp F3  &kp F4      &kp F5         &trans                    &trans  &kp F6     &kp F7     &kp F8     &kp F9     &kp F10
+&kp F11  &kp F12  &trans  &trans      &kp LG(LS(S))  &trans                    &trans  &trans     &trans     &mac_us    &win_us    &win_jis
+&trans   &trans   &trans  &trans      &trans         &kp LG(LS(NUMBER_4))      &trans  &trans                                      &bt BT_CLR
             >;
         };
 
         MOUSE {
             bindings = <
 &kp HOME        &kp LG(UP_ARROW)  &kp UP_ARROW        &trans               &trans                            &trans     &kp LS(LC(TAB))  &kp LC(TAB)  &trans  &trans
-&kp END         &kp LEFT_ARROW    &kp DOWN_ARROW      &kp RIGHT_ARROW      &trans  &trans         &trans     &trans     &mkp LCLK        &mkp RCLK    &trans  &trans
-&kp LEFT_SHIFT  &none             &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &trans  &trans         &trans     &trans     &trans           &trans       &trans  &trans
+&kp END         &kp LEFT_ARROW    &kp DOWN_ARROW      &kp RIGHT_ARROW      &trans  &trans         &trans     &trans     &trans           &trans       &trans  &trans
+&kp LEFT_SHIFT  &none             &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &none   &trans         &trans     &trans     &trans           &trans       &trans  &trans
 &trans          &trans            &trans              &trans               &mo 7   &mkp LCLK      &mkp RCLK  &mkp LCLK                                        &trans
             >;
         };
 
         MOUSE_SLOW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans     &mkp LCLK  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &mkp RCLK  &mkp LCLK                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans     &mkp LCLK  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &mkp RCLK  &mkp LCLK                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
