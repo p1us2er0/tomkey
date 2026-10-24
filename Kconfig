@@ -3,4 +3,9 @@ config TOMKEY_LAYER_STATE
     bool "Read-only BLE layer state"
     depends on ZMK_BLE && ZMK_SPLIT_ROLE_CENTRAL
     default n
+
+config TOMKEY_INPUT_PROCESSOR_ACCEL
+    bool "Velocity based pointer acceleration"
+    default y
+    depends on DT_HAS_ZMK_INPUT_PROCESSOR_TOMKEY_ACCEL_ENABLED
 endmenu

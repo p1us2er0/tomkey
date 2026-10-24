@@ -1,0 +1,40 @@
+description: |
+  Velocity based pointer acceleration for relative X/Y events.
+  Speed is estimated from the movement within a short window, so bursts of
+  events delivered together over the split link do not cause sudden jumps.
+  Factors are in thousandths (1000 = 1.0x) and speeds in counts per second.
+
+compatible: "zmk,input-processor-tomkey-accel"
+
+include: ip_zero_param.yaml
+
+properties:
+  min-factor:
+    type: int
+    default: 1000
+    description: Factor applied at or below speed-threshold.
+
+  max-factor:
+    type: int
+    default: 3000
+    description: Factor applied at or above speed-max.
+
+  speed-threshold:
+    type: int
+    default: 1200
+    description: Speed where acceleration starts.
+
+  speed-max:
+    type: int
+    default: 6400
+    description: Speed where max-factor is reached.
+
+  acceleration-exponent:
+    type: int
+    default: 2
+    description: Curve shape between the two speeds. 1 is linear, 2 is quadratic.
+
+  speed-window-ms:
+    type: int
+    default: 60
+    description: Time window used to estimate the speed.

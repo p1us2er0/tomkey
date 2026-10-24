@@ -1,2 +1,3 @@
 zephyr_library()
 zephyr_library_sources_ifdef(CONFIG_TOMKEY_LAYER_STATE src/layer_state.c)
+zephyr_library_sources_ifdef(CONFIG_TOMKEY_INPUT_PROCESSOR_ACCEL src/input_processor_accel.c)

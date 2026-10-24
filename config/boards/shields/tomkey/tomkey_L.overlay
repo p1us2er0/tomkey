@@ -37,9 +37,27 @@
  * Effective counts per inch: normal 400, slow 200, scroll 25.
  * The 800 in zip_temp_layer is the mouse layer timeout in ms, not speed.
  */
+/ {
+    /*
+     * Pointer acceleration for the normal mode only. Speeds are counts per
+     * second of the 1600 cpi sensor, measured before the 1/4 scaler.
+     * Slow movement stays at 1.0x. Acceleration starts at 1 inch/s of ball
+     * movement and reaches 2.0x at 5 inch/s.
+     */
+    tomkey_accel: tomkey_accel {
+        compatible = "zmk,input-processor-tomkey-accel";
+        #input-processor-cells = <0>;
+        min-factor = <1000>;
+        max-factor = <2000>;
+        speed-threshold = <1600>;
+        speed-max = <8000>;
+        acceleration-exponent = <2>;
+    };
+};
+
 &trackball_listener {
     status = "okay";
-    input-processors = <&zip_temp_layer 6 800>, <&zip_xy_scaler 1 4>;
+    input-processors = <&zip_temp_layer 6 800>, <&tomkey_accel>, <&zip_xy_scaler 1 4>;
 
     mouse_slow {
         layers = <7>;
